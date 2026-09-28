@@ -4,7 +4,10 @@
   "version": "0.0.0-migration",
   "type": "module",
   "scripts": {
-    "verify:repo": "node scripts/verify-repository.mjs"
+    "verify:repo": "node scripts/verify-repository.mjs",
+    "verify:recovered": "node scripts/verify-recovered-source.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }
