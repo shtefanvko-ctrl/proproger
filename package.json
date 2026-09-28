@@ -1,0 +1,10 @@
+{
+  "name": "proproger-repository-control",
+  "private": true,
+  "version": "0.0.0-migration",
+  "type": "module",
+  "scripts": {
+    "verify:repo": "node scripts/verify-repository.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
