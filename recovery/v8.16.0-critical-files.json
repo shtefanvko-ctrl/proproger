@@ -1,0 +1,111 @@
+{
+  "baseline": "PROPROGER v8.16.0 recovered",
+  "source_status": "verified recovered snapshot; not latest historical version",
+  "later_verified_baseline": {
+    "version": "8.17.0",
+    "commit": "ec7894a",
+    "note": "goal closure; original source objects not yet recovered"
+  },
+  "files": [
+    {
+      "path": "content.js",
+      "size": 637280,
+      "sha256": "9a7cfe1d6d6431f6635b545b0b78b3ce48c9551cfc67d42299ec8ac686f10c48"
+    },
+    {
+      "path": "background.js",
+      "size": 17443,
+      "sha256": "85bb33215a5b490895094b67724a7efd9f80a567fad6de16dd81a1e4858c5bc0"
+    },
+    {
+      "path": "manifest.json",
+      "size": 1254,
+      "sha256": "5267798348097e7db637812ccba8e9240ffa297ff913d7cb50adb560b8cb13c4"
+    },
+    {
+      "path": "project_brain.js",
+      "size": 7707,
+      "sha256": "708027b70633227b91f3ec042ab6de936e5a6bf5d3de9b1d67601429202d7702"
+    },
+    {
+      "path": "product_brain.js",
+      "size": 14138,
+      "sha256": "ab6a4352dc7137a8ccce475b05992df4ad42eeaed5d4f6b00638c66ec467c925"
+    },
+    {
+      "path": "decision_gate.js",
+      "size": 11471,
+      "sha256": "dad2322cd0e017ea5984e9495103e7566ffe8dc32af26cbd2d0833f7aca66846"
+    },
+    {
+      "path": "branch_recovery.js",
+      "size": 6194,
+      "sha256": "f43129ff3eb4389504cd90077cd6e21281c86cd7385820cb0dc806ba881bb8fe"
+    },
+    {
+      "path": "auto_completion.js",
+      "size": 6824,
+      "sha256": "b747aac4269847462017aa3c64ce8831de89fa1ad6ff027abcb017875ee6eb40"
+    },
+    {
+      "path": "worker_scheduler.js",
+      "size": 6546,
+      "sha256": "89aca925dfeee780f35bec4cd1d3c4a0cb4d18d9647c6b6699f6ca1a06b5e556"
+    },
+    {
+      "path": "file_locks.js",
+      "size": 7209,
+      "sha256": "a983bf5da33569ccc973242e3bc1b3928816cbe85db491c585051857cf07f895"
+    },
+    {
+      "path": "file_lock_client.js",
+      "size": 2178,
+      "sha256": "6aa5084fd75e4608972c76928726d238a7b69e7151e4ecff9dd76b9e7278c122"
+    },
+    {
+      "path": "visual_brain.js",
+      "size": 8730,
+      "sha256": "e174dd7d053191560959687f05385c4b854d049a84d16bc365c7fd0964fec219"
+    },
+    {
+      "path": "reference_set.js",
+      "size": 5357,
+      "sha256": "66bf72692a4354ce8b36f3876cc4592b1d041eeacd38deb7ec8471056c86b2a5"
+    },
+    {
+      "path": "screen_interpreter.js",
+      "size": 4232,
+      "sha256": "d7b3971a4cf273c7b1a502b33e6cb9df17be307d17d239b3fb38a072eb2d27c3"
+    },
+    {
+      "path": "visual_task_engine.js",
+      "size": 10107,
+      "sha256": "6baabceb513af308e85d7b6473ffc9f358e0301ba56d589295efe7afbce206db"
+    },
+    {
+      "path": "visual_audit.js",
+      "size": 7495,
+      "sha256": "e3f74f8d1b0121924c1749e70e0a021dfd665b685da9ccf3e5796ac009ca515e"
+    },
+    {
+      "path": "tests/core-smoke.mjs",
+      "size": 5444,
+      "sha256": "063c9fce02131d98755535b807edb4b19f96db2dc9953648c6a943e9da5c1643"
+    },
+    {
+      "path": "tests/extended-core.mjs",
+      "size": 2420,
+      "sha256": "bcf6f1dc73f326001532f7a511f626405a52be0863fc0744f47d7bf131ebba43"
+    },
+    {
+      "path": "tests/static-contract.mjs",
+      "size": 921,
+      "sha256": "cd8ed0c357b7adcd11ea3eda83d330ce891e6b7a422678c0f445fb6c47955ad3"
+    },
+    {
+      "path": "scripts/dev-check.mjs",
+      "size": 538,
+      "sha256": "9f75da6f9b67454bf96313823c3baf4596a3c43794d4a829447a1d721c954c6a"
+    }
+  ]
+}
