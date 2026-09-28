@@ -1,39 +1,41 @@
 # PROPROGER
 
-Git migration and history recovery are in progress.
+Execution Kernel / Chrome Extension project.
 
-## Verified provenance
+## Current repository status
 
-A real local Git repository was recovered from `proproger-local.zip`. Its authentic commit history is:
+The Git migration is provenance-first.
 
-- `d51dd47` — Baseline PROPROGER v8.8.0.1 local dev
-- `3214738` — Sync v8.8.0.1 manifest and rotation check
-- `a8b37eb` — v8.8.1 Parallel Safety file locks
-- `92ca5d9` — v8.8.1.1 Parallel Safety audit hotfix
-- `360de14` — v8.8.1.2 strict response binding
+- Authentic Git history was recovered through **v8.8.1.2** (`360de14`).
+- A complete **v8.16.0** source snapshot was recovered and passed syntax/core/extended/static checks.
+- A later **v8.17.0 Goal Closure** implementation is historically verified at `ec7894a`, but its actual source/Git objects have not yet been recovered.
 
-The recovered Git object database contains no later unreachable/dangling commits.
+Therefore this repository does **not** pretend that recovered v8.16 is the latest implementation.
 
-## Recovered source
+## Verification
 
-A complete v8.16.0 source package was independently recovered and verified. It passes:
+Repository control:
 
-- syntax check: 15/15 JS modules
-- core smoke suite: PASS
-- manifest dependency presence check: PASS
+```bash
+npm run verify:repo
+```
 
-It is preserved separately as `recovered/v8.16.0` in the portable recovery bundle. The original intermediate Git commits between v8.8.1.2 and v8.16.0 were not available, so they are not fabricated.
+Verify an unpacked copy of the recovered v8.16 source byte-for-byte:
 
-## Later known baseline
+```bash
+node scripts/verify-recovered-source.mjs /path/to/unpacked/PROPROGER
+```
 
-Project audit evidence records a later baseline:
+Critical v8.16 files are pinned by size and SHA-256 in `recovery/v8.16.0-critical-files.json`.
 
-`ec7894a — v8.17.0 goal closure`
+See:
+- `docs/FEATURE_MAP.md`
+- `docs/VERSION_PROVENANCE.md`
+- `docs/VERIFICATION_MATRIX.md`
+- `docs/RECOVERY_AUDIT.md`
 
-with a clean working tree and full DEV_CHECK pass. The original v8.17.0 source bytes/Git objects are not currently available, so v8.16.0 is **not** promoted as the latest version.
+## Architecture boundary
 
-## Migration rule
+PROPROGER remains the **Execution Kernel**: pipeline, Project/Product Brain, Decision Gate, recovery, scheduling, artifacts, visual execution and Creator tooling.
 
-Do not reconstruct missing releases from descriptions. Preserve authentic Git history where it exists, mark recovered snapshots explicitly, and promote a version to `main` only after its actual source tree is available and verified.
-
-AI Company OS v9 remains a separate platform layer above the PROPROGER Execution Kernel.
+AI Company OS is a separate server/business platform repository and must not be merged into the extension monolith.
