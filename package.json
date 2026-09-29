@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "verify:repo": "node scripts/verify-repository.mjs",
-    "verify:recovered": "node scripts/verify-recovered-source.mjs"
+    "verify:recovered": "node scripts/verify-recovered-source.mjs",
+    "scan:v8.17": "node scripts/scan-v8.17-candidate.mjs"
   },
   "engines": {
     "node": ">=20"
