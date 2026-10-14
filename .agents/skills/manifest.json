@@ -1,0 +1,13 @@
+{
+  "schema": "proproger.agent-skills.v1",
+  "skills": [
+    "proproger-recovery-orchestrator",
+    "proproger-source-provenance",
+    "proproger-extension-regression",
+    "proproger-dom-compatibility",
+    "proproger-verification-audit",
+    "proproger-devil-review"
+  ],
+  "evidenceFirst": true,
+  "noDuplicateSkills": true
+}
